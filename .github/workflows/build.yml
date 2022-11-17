@@ -44,7 +44,7 @@ jobs:
 
       - name: extract crictl
         run: |
-          tar -zxvf crictl-${{env.VERSION}}-linux-amd64.tar.gz -C ./critools-image/amd64 &&  tar -zxvf crictl-${{env.VERSION}}-linux-arm64.tar.gz -C ./critools-image/amd64
+          tar -zxvf crictl-${{env.VERSION}}-linux-amd64.tar.gz -C ./critools-image/amd64 &&  tar -zxvf crictl-${{env.VERSION}}-linux-arm64.tar.gz -C ./critools-image/arm64
       - name: extract critest    
         run: |
           tar -zxvf critest-${{env.VERSION}}-linux-amd64.tar.gz -C ./critools-image/amd64 && tar -zxvf critest-${{env.VERSION}}-linux-arm64.tar.gz -C ./critools-image/arm64
